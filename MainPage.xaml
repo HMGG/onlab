@@ -1,0 +1,55 @@
+﻿<Page
+    x:Class="App1.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:App1"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+
+    <ScrollViewer x:Name="mainScrollView">
+        <StackPanel x:Name="mainStackPanel">
+            <Button x:Name="btnFunctions" Click="ShowFunctions" Content="Show Functions">
+            </Button>
+            <local:FitnessPanel x:Name="basePanel">
+                 <local:HorizontalFitnessPanel x:Name="textPanel">
+                    <TextBlock x:Name="textb1" Padding="10" FontFamily="Consolas" TextWrapping="WrapWholeWords" Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac mi ipsum. Phasellus vel malesuada mauris. Donec pharetra, enim sit amet mattis tincidunt, felis nisi semper lectus, vel porta diam nisi in augue. Pellentesque lacus tortor, aliquam et faucibus id, rhoncus ut justo. Sed id lectus odio, eget pulvinar diam. Suspendisse eleifend ornare libero, in luctus purus aliquet non. Sed interdum, sem vitae rutrum rhoncus, felis ligula ultrices sem, in eleifend eros ante id neque.">
+                    </TextBlock>
+                    <TextBlock x:Name="textb2" Padding="10" FontFamily="Consolas" TextWrapping="WrapWholeWords" Text="SDRTZUKKJTRHGSD TZRHGEWF UZKTJRHE 5767KJTREHG DFGH H567I JHGESDF 8O7I6RUEHW GSDFGH,U ZJ45 67978LKTZJREHW GQFEGRT J6578L7 UKTZRNBRSDV FDGFHG, K76RJ5EHW BSFNDGFHTU,68L 7K6RTJERHSD NDGFT,KRTJ ESBDG ZT,KZRTJ">
+                    </TextBlock>
+                    <TextBlock x:Name="textb4" FontFamily="Consolas" Padding="10" TextWrapping="WrapWholeWords" Text="Ez egy kép egy macskáról">
+                    </TextBlock>
+                    <Image x:Name="image2" ImageOpened="Image2_Loaded" Stretch="Uniform" Source="dank.png">
+                    </Image>
+                </local:HorizontalFitnessPanel>
+                 <local:FitnessPanel x:Name="imagePanel">
+                    <Image x:Name="image1" ImageOpened="Image1_Loaded" Stretch="Uniform" Source="dank.png">
+                    </Image>
+                    <TextBlock x:Name="textb3" FontFamily="Consolas" Padding="10" TextWrapping="WrapWholeWords" Text="Ez egy kép egy macskáról">
+                    </TextBlock>
+                    <TextBlock x:Name="textb5" FontFamily="Consolas" Padding="10" TextWrapping="WrapWholeWords" Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac mi ipsum. Phasellus vel malesuada mauris. Donec pharetra, enim sit amet mattis tincidunt, felis nisi semper lectus, vel porta diam nisi in augue. Pellentesque lacus tortor, aliquam et faucibus id, rhoncus ut justo. Sed id lectus odio, eget pulvinar diam. Suspendisse eleifend ornare libero, in luctus purus aliquet non. Sed interdum, sem vitae rutrum rhoncus, felis ligula ultrices sem, in eleifend eros ante id neque.">
+                    </TextBlock>
+                    <TextBlock x:Name="textb7" Padding="10" FontFamily="Consolas" TextWrapping="WrapWholeWords" Text="SDRTZUKKJTRHGSD TZRHGEWF UZKTJRHE 5767KJTREHG DFGH H567I JHGESDF 8O7I6RUEHW GSDFGH,U ZJ45 67978LKTZJREHW GQFEGRT J6578L7 UKTZRNBRSDV FDGFHG, K76RJ5EHW BSFNDGFHTU,68L 7K6RTJERHSD NDGFT,KRTJ ESBDG ZT,KZRTJ">
+                    </TextBlock> 
+                </local:FitnessPanel>
+            </local:FitnessPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBox x:Name="numberBox" InputScope="Number">
+                </TextBox>
+                <TextBox x:Name="xBox" InputScope="Number">
+                </TextBox>
+                <TextBox x:Name="yBox" InputScope="Number">
+                </TextBox>
+                <Button x:Name="showValue" Click="ShowValue_Click">
+                </Button>
+                <TextBlock x:Name="valueBox">
+                </TextBlock>
+            </StackPanel>
+            <StackPanel x:Name="Graphs">
+            </StackPanel>
+        </StackPanel>
+    </ScrollViewer>
+
+</Page>
