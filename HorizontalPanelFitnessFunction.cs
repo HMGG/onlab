@@ -1,4 +1,5 @@
-﻿using Windows.UI.Xaml;
+﻿using System;
+using Windows.UI.Xaml;
 
 namespace App1
 {
@@ -23,6 +24,10 @@ namespace App1
                 {
                     ymin = ff.ymin;
                 }
+            }
+            if (xmin > 500)
+            {
+                xmin = 500;
             }
         }
 
@@ -90,13 +95,25 @@ namespace App1
                     }
                     else
                     {
-                        matrix[x, y] = -1;
+                        if (s == 0)
+                        {
+                            matrix[x, y] = -1;
+                        }
                         smatrix[x, y, s] = y;
+                    }
+
+                    if (x == xmin)
+                    {
+                        lastHorizontalSlope[y] = Math.Max(f1.lastHorizontalSlope[y], f2.lastHorizontalSlope[y]);
                     }
                 }
             }
 
             xmin = f1.xmin + f2.xmin;
+            if (xmin > 500)
+            {
+                xmin = 500;
+            }
         }
 
         protected void UpdateSeparators(int x, int y, int separator, int s)

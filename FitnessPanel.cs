@@ -34,7 +34,7 @@ namespace App1
                     else
                     {
                         double best = 1;
-                        height = FitnessFunction.ymax - 1;
+                        height = function.lastVerticalSlope[width];
                         for (int y = function.ymin; y <= function.lastVerticalSlope[width]; y++)
                         {
                             double test = function.matrix[width, y] / (double)y / availableSize.Width;

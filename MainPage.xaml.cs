@@ -25,7 +25,7 @@ namespace App1
 
         private async void ShowFunctions(object sender, RoutedEventArgs e)
         {
-            if(imagesloaded == 2)
+            if (imagesloaded == 3)
             {
                 Start();
             }
@@ -54,8 +54,25 @@ namespace App1
                 height = bms.PixelHeight
             };
 
-            imagePanel.functions[0] = iff;
-            imagePanel.function = new PanelFitnessFunction(imagePanel);
+            column1Panel.functions[0] = iff;
+            column1Panel.function = new PanelFitnessFunction(column1Panel);
+
+            imagesloaded++;
+        }
+
+        private void Image3_Loaded(object sender, RoutedEventArgs e)
+        {
+            Image image = (Image)sender;
+            BitmapSource bms = (BitmapSource)image.Source;
+
+            ImageFitnessFunction iff = new ImageFitnessFunction(image)
+            {
+                width = bms.PixelWidth,
+                height = bms.PixelHeight
+            };
+
+            column2Panel.functions[0] = iff;
+            column2Panel.function = new PanelFitnessFunction(column2Panel);
 
             imagesloaded++;
         }
@@ -87,8 +104,10 @@ namespace App1
 
             allfunctions.AddRange(textPanel.functions);
             allfunctions.Add(textPanel.function);
-            allfunctions.AddRange(imagePanel.functions);
-            allfunctions.Add(imagePanel.function);
+            allfunctions.AddRange(column1Panel.functions);
+            allfunctions.Add(column1Panel.function);
+            allfunctions.AddRange(column2Panel.functions);
+            allfunctions.Add(column2Panel.function);
             allfunctions.Add(basePanel.function);
 
             mainScrollView.UpdateLayout();
@@ -97,7 +116,7 @@ namespace App1
         }
 
 
-            private void ShowValue_Click(object sender, RoutedEventArgs e)
+        private void ShowValue_Click(object sender, RoutedEventArgs e)
         {
             int x = int.Parse(xBox.Text);
             int n = int.Parse(numberBox.Text);

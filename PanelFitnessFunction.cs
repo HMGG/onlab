@@ -80,6 +80,10 @@ namespace App1
                     xmin = ff.xmin;
                 }
             }
+            if (xmin > 500)
+            {
+                xmin = 500;
+            }
         }
 
         protected virtual void Convolve(FitnessFunction f1, FitnessFunction f2, int s)
