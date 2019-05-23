@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="App1.FitnessFunction">
+    <Position X="6" Y="0.75" Width="1.75" />
+    <Members>
+      <Method Name="FitnessFunction" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>IAAIAAAAAAAAgQAAAAgAECAAAAAAAAEAAAABgEAAEAA=</HashCode>
+      <FileName>FitnessFunction.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="owner" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="App1.FitnessPanel">
+    <Position X="12" Y="4.75" Width="2" />
+    <Members>
+      <Method Name="ContainsFunctionOf" Hidden="true" />
+      <Field Name="newfunction" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAAAAJAAAgEAAAAYAAAAAABAAAAAAAgAAAA=</HashCode>
+      <FileName>FitnessPanel.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="function" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="App1.HorizontalFitnessPanel">
+    <Position X="12" Y="7.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAAAAAAAAAEAAAAQAAAAAABAAAAAAAAAAAA=</HashCode>
+      <FileName>HorizontalFitnessPanel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="App1.HorizontalPanelFitnessFunction">
+    <Position X="8.25" Y="7.75" Width="2.5" />
+    <Members>
+      <Method Name="HorizontalPanelFitnessFunction" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAABAAAAAACAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>HorizontalPanelFitnessFunction.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="App1.ImageFitnessFunction">
+    <Position X="6" Y="4.75" Width="1.75" />
+    <Members>
+      <Method Name="ImageFitnessFunction" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAQAgAEAAAAAAAAAAAAAABAAAAAAA=</HashCode>
+      <FileName>ImageFitnessFunction.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="App1.PanelFitnessFunction">
+    <Position X="8.25" Y="4.75" Width="2.5" />
+    <Members>
+      <Method Name="PanelFitnessFunction" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAFBAAAAAAAAAQQAABAAAAAAA=</HashCode>
+      <FileName>PanelFitnessFunction.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="fitnessPanel" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="App1.TextBlockFitnessFunction">
+    <Position X="3.5" Y="4.75" Width="2" />
+    <Members>
+      <Method Name="TextBlockFitnessFunction" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAAAAAAAAgAEAAAAAAAAEAAACABAAAAAAA=</HashCode>
+      <FileName>TextBlockFitnessFunction.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="textBlock" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Windows.UI.Xaml.UIElement" Collapsed="true">
+    <Position X="9" Y="2" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Windows.UI.Xaml.Controls.TextBlock" Collapsed="true">
+    <Position X="1" Y="5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -88,7 +88,6 @@ namespace App1
 
         protected virtual void Convolve(FitnessFunction f1, FitnessFunction f2, int s)
         {
-            //visszacsinálni?
             int[,] matrix1 = f1.matrix;
             int[,] matrix2 = f2.matrix;
 
@@ -172,8 +171,10 @@ namespace App1
                 lastHorizontalSlope[x] = Math.Max(f1.lastHorizontalSlope[x], f2.lastHorizontalSlope[x]);
             }
 
+            //updating min height
             ymin = f1.ymin + f2.ymin;
 
+            //updating own matrix
             matrix = panelmatrix;
         }
     }

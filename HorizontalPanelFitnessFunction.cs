@@ -95,6 +95,7 @@ namespace App1
                     }
                     else
                     {
+                        //first convolution
                         if (s == 0)
                         {
                             matrix[x, y] = -1;
@@ -108,7 +109,7 @@ namespace App1
                     }
                 }
             }
-
+            //updating min width
             xmin = f1.xmin + f2.xmin;
             if (xmin > 500)
             {
